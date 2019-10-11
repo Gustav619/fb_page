@@ -1,195 +1,292 @@
 <html>
-<title>Facebook - log in or sign up</title> 
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="icon" type="image/png" href="fb_icon.png">
+	<head>
+		
+		<title>Facebook</title>
+
+		<style>
+
+body{
+	margin:0;
+	padding:0;
+	background:linear-gradient(white, #D3D8E8);
+	font-family:Helvetica, Arial, sans-serif;
+
+}
+
+.header
+{
+	background-color:rgb(59, 89, 152);
+	height: 12.2%;
+	width:100%;
+	font-family:tahoma;
+	border: 1px solid darkblue;
+	
+	
+}
+
+.right
+{
+	width:45%;
+	position:absolute;
+	top:16%;
+	left:56%;
+	}
+	
+.left
+{	width:55%;
+	position:absolute;
+	left:0;
+}
+
+.image{
+	position:relative;
+	left:200px;
+
+	}
+
+.registration_form
+{
+background-color:white;
+border: 1px solid rgb(189, 199, 216);
+border-radius:5px;
+font-family:Helvetica, Arial, sans-serif;
+font-size:18px;
+font-weight:400;
+outline-color:rgb(77, 144, 254);
+padding-bottom:8px;
+padding-top:8px;
+padding-left:10px;
+padding-right:10px;
+margin:6px;
+
+
+}
+
+
+select{
+	background-color:rgb(221, 221, 221);
+	border:1px solid rgb(189, 199, 216);
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:13px;
+	font-weight:400;
+	height:30px;
+	padding:5px;
+	width:56px;
+	margin:0;
+}
+
+
+#birthday
+{
+	color:rgb(54, 88, 153);
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:11px;
+	text-decoration-color:rgb(54, 88, 153);
+	width:150px;
+	display:inline-block;
+	text-decoration:none;
+
+}
+
+
+.gender
+{
+	color:rgb(29, 33, 41);
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:18px;
+	font-weight:400;
+	padding-left:3px;
+	padding-right:10px;
+	margin-top:30px;
+
+	
+}
+
+
+.terms_and_conditions
+{
+	color:rgb(119, 119, 119);
+	display:block;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:11px;
+	margin-top:11px;
+	margin-bottom:11px;
+	width:316px;
+}
+
+
+#submit
+{	font-size:18px;	
+	background-color:rgb(105, 167, 78);
+	border:1px solid rgb(59, 110, 34);
+	color:white;
+	font-family:Freight Sans Bold", Helvetica, Arial, sans-serif;
+	padding:20px;
+	width:194px;
+	text-align:center;
+	font-weight:700;
+	margin-bottom:10px;
+	margin-top:10px;
+	text-shadow:rgba(0, 0, 0, 0.5) 0px 1px 2px;
+	border-radius:5px;
+	height:39px;
+}
+
+		</style>
+	</head>
+
+	
 <body>
-<div id="bluebar">
-    <div style="margin: 0px 286px 0px 270px; padding: 13px 0px 0px;">
-	    <div id="fblogo">	
-	        <h title="Go to Facebook homepage">facebook</h>
-		</div>
-		<div style="float: right;">
-		    <table cellspacing="0">
-	            <tr>
-			        <td class="logintable" id="loginlabel">
-				        <label style="padding: 0px 0px 0px 0.8px;">Email or Phone</label>
-					</td>
-				    <td class="logintable" id="loginlabel">
-				        <label style="padding: 0px 0px 0px 0.8px;">Password</label>
-				    </td>
-			    </tr>
-		        <tr>
-					<td class="logintable">
-				        <input type="text" class="credentials">
-					</td>
-					<td class="logintable">
-				        <input type="password" class="credentials">
-					</td>
-				    <td class="logintable" >
-						<button type="button" id="loginbutton">Log In</button>
-					</td>
-				</tr>
-			    <tr>
-				    <td id="blank"></td>
-					<td id="blank">
-					    <a style="color: rgb(156, 180, 216); font-size: 12px; font-family: Helvetica,Arial,sans-serif;">Forgotten account?</a>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-</div>
-<div>
-    <div>
-	    <div id="backgrad">
-		    <div style="margin: 0px 270px 0px 269.5px; height: 594.5px;">
-			    <div style="display:inline-block; width:296.6px">
-					<div id="quote">Facebook helps you connect and share with the people in your life.</div>
-					<img src="https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png?_nc_x=Ij3Wp8lg5Kz" style="height:194px;width:536px;">
-				</div>
-				<div class="signup">
-				    <div style="width:400px;height:77.8px;padding:23px 0px 17px 0px;">
-					    <div id="createacc">Create an account</div>
-						<div id="facts">It's quick and easy.</div>
-					</div>
-					<div>
-					    <input type="text" class="register" placeholder="First name" style="width:194.5px;">
-						<input type="text" class="register" placeholder="Surname" style="width:194.5px;margin-left:6px">
-						<input type="text" class="register" placeholder="Mobile number or email address" style="width:399.5px;margin-top:10px;">
-						<input type="text" class="register" placeholder="New password" style="width:399.5px;margin-top:10px;">
-					</div>
-					<div style="float:right; width:416.5px; height:55.8px; margin-top:22px;">
-					    <div id="bdaygen">Birthday</div>
-						<div style="width:416.5px;height:30px;margin-top:5.5px;">
-						    <select class="birthdate" title="Day">
-							    <option>Day</option>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								<option>6</option>
-								<option>7</option>
-								<option>8</option>
-								<option>9</option>
-								<option>10</option>
-								<option>11</option>
-								<option>12</option>
-								<option>13</option>
-								<option>14</option>
-								<option>15</option>
-								<option>16</option>
-								<option>17</option>
-								<option>18</option>
-								<option>19</option>
-								<option>20</option>
-								<option>21</option>
-								<option>22</option>
-								<option>23</option>
-								<option>24</option>
-								<option>25</option>
-								<option>26</option>
-								<option>27</option>
-								<option>28</option>
-								<option>29</option>
-								<option>30</option>
-								<option>31</option>
-							</select>
-						    <select class="birthdate" title="Month" style="width:70.4px;">
-							    <option>Month</option>
-								<option>Jan</option>
-								<option>Feb</option>
-								<option>Mar</option>
-								<option>Apr</option>
-								<option>May</option>
-								<option>Jun</option>
-								<option>Jul</option>
-								<option>Aug</option>
-								<option>Sept</option>
-								<option>Oct</option>
-								<option>Nov</option>
-								<option>Dec</option>
-							</select>
-							<select class="birthdate" title="Year" style="width:63.2px;">
-							    <option>Year</option>
-								<option>2019</option>
-								<option>2018</option>
-								<option>2017</option>
-								<option>2016</option>
-								<option>2015</option>
-								<option>2014</option>
-								<option>2013</option>
-								<option>2012</option>
-								<option>2011</option>
-								<option>2010</option>
-								<option>2009</option>
-								<option>2008</option>
-								<option>2007</option>
-								<option>2006</option>
-								<option>2005</option>
-								<option>2004</option>
-								<option>2003</option>
-								<option>2002</option>
-								<option>2001</option>
-								<option>2000</option>
-								<option>1999</option>
-								<option>1998</option>
-								<option>1997</option>
-								<option>1996</option>
-								<option>1995</option>
-								<option>1994</option>
-								<option>1993</option>
-								<option>1992</option>
-								<option>1991</option>
-								<option>1990</option>
-								<option>1989</option>
-								<option>1988</option>
-								<option>1987</option>
-								<option>1986</option>
-								<option>1985</option>
-								<option>1984</option>
-								<option>1983</option>
-								<option>1982</option>
-								<option>1981</option>
-								<option>1980</option>
-								<option>1979</option>
-								<option>1978</option>
-								<option>1977</option>
-								<option>1976</option>
-								<option>1975</option>
-							</select>					    
-						</div>
-					</div>
-					<div style="float:right; width:416.5px; height:57.3px; margin-top:10px;">
-					    <div id="bdaygen">Gender</div>
-						<div style="width:278.475px;height:31.5px;margin-top:10px;">
-						    <input type="radio" style="margin:3px 0px 0px 8.5px;" name="gender">
-							<label class="gens">Female</label>
-							<input type="radio" style="margin:3px 0px 0px 20px;" name="gender">
-							<label class="gens">Male</label>
-							<input type="radio" style="margin:3px 0px 0px 16px;" name="gender">
-							<label class="gens" style="padding-left:1.5px;">Custom</label>
-						</div>
-					</div>
-				    <div style="height:43.2px; width:316px; line-height:14.74px; margin-right:100px;">
-					    <div class="terms">By clicking Sign Up, you agree to our&nbsp</div>
-						<a1 class="terms" style="color: rgb(56, 88, 152);">Terms</a1>
-						<div class="terms">,&nbsp</div>
-						<a1 class="terms" style="color: rgb(56, 88, 152);">Data Policy</a1>
-						<div class="terms">&nbspand</div>
-						<a1 class="terms" style="color: rgb(56, 88, 152);">Cookie Policy</a1>
-						<div class="terms">. You may receive SMS notifications from us and</div>
-						<div class="terms">can opt out at any time.</div>
-					</div>
-					<button type="button" id="signupbutton">Sign Up</button>
-					<div>
-					    <a2 class="extra" style="color:rgb(56, 88, 152);">Create a Page</a2>
-					    <div class="extra">&nbspfor a celebrity, band or business.</div>
-					</div>
-				</div>
-			</div>
-		</div>
+
+
+  <div class="header">
+   <span style="font-size: 45px; position:absolute; left:180px; color:white; top:3.5%;  "> <b> facebook</b> </span>		
+   <span style="position:absolute; right:495px; color:white; top:2%; font-size:12px;font-family: Helvetica, Arial, sans-serif">Email or Phone </span>
+   <span style="position:absolute; right:350px; color:white; top:2%; font-size:12px;font-family: Helvetica, Arial, sans-serif"">Password </span>
+		
+
+    <div style="position:absolute; right:175px; top:5%;">
+      <input type="text" style="width:150px; height:22px; border:0.5px solid black"></input> &emsp;	
+      <input type="password" style="width:150px; height:22px; border:0.5px solid black"></input> &emsp;
+      <button style="background-color:#4267b2; height: 22px; color:white; border:1px solid darkblue; border-radius: 2px;"> <b>Log In</b></button><br>
+      <a href="#" style="color:#9cb4d8; text-decoration:none; position:relative; left:175px; top:5px;">forgotten passoword?</a>
+			
+
     </div>
-</div>
+  </div>
+	
+
+  <div class="left">
+	<span  style="color:rgb(14, 56, 95); font-size:20px; font-weight:700; width:300px;	word-spacing:-1;display:block; position:relative;  left:200px; margin:2%; ">Facebook helps you connect and share with the people in your life.</span>
+ 	
+	<img src="https://www.facebook.com/rsrc.php/v3/y7/r/7XdR1KwCifL.png?_nc_x=Ij3Wp8lg5Kz"/> 
+
+ </div>
+
+
+  <div class="right">
+    <span style="color:#333; font-size:36px; font-family:Helvetica, Arial, sans-serif; font-weight:700;" >Create an account</span><br><br>
+    <span style="color:#1d2129; font-size:19px; font-family:Helvetica, Arial, sans-serif;">It's free and always will be.</span>	<br><br>
+
+    <input class="registration_form" type="text" placeholder="First Name"style="width:180px;"></input>
+    <input class="registration_form" type="text" placeholder="Last Name" style="width:180px;"></input>
+    <input class="registration_form" type="text" placeholder="Mobile number or email address"style="width:377px;"></input>
+    <input class="registration_form" type="text" placeholder="New Password"style="width:377px;"></input><br><br>
+
+    <span style="color:#1d2129; font-size:19px; font-family:Helvetica, Arial, sans-serif;">Birthday</span><br>
+    <select>
+                <option>Day</option>
+		<option>1</option>
+		<option>2</option>
+                <option>3</option>
+		<option>4</option>
+                <option>5</option>
+		<option>6</option>
+                <option>7</option>
+		<option>8</option>
+                <option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+                <option>13</option>
+		<option>14</option>
+                <option>15</option>
+		<option>16</option>
+                <option>17</option>
+		<option>18</option>
+                <option>19</option>
+		<option>20</option>
+                <option>21</option>
+		<option>22</option>
+                <option>23</option>
+		<option>24</option>
+                <option>25</option>
+		<option>26</option>
+                <option>27</option>
+		<option>28</option>
+                <option>29</option>
+		<option>30</option>
+		<option>31</option>
+		
+	
+    </select>
+    <select>
+            <option>Month</option>
+                <option>Jan</option>
+		<option>feb</option>
+		<option>Mar</option>
+		<option>Apr</option>
+                <option>May</option>
+		<option>Jun</option>
+                <option>Jul</option>
+		<option>Aug</option>
+                <option>Sep</option>
+		<option>Oct</option>
+                <option>Nov</option>
+		<option>Dec</option>
+		
+	
+    </select>
+    <select>
+                <option>year</option>
+		<option>1990</option>
+		<option>1991</option>
+		<option>1992</option>
+		<option>1993</option>
+                <option>1994</option>
+		<option>1995</option>
+                <option>1996</option>
+		<option>1997</option>
+                <option>1998</option>
+		<option>1999</option>
+                <option>2000</option>
+		<option>2001</option>
+		<option>2002</option>
+		<option>2003</option>
+                <option>2004</option>
+		<option>2005</option>
+                <option>2006</option>
+		<option>2007</option>
+                <option>2008</option>
+		<option>2009</option>
+                <option>2010</option>
+		<option>2011</option>
+                <option>2012</option>
+		<option>2013</option>
+		<option>2014</option>
+		<option>2015</option>
+                <option>2016</option>
+		<option>2017</option>
+                <option>2018</option>
+		<option>2019</option>
+                
+		
+    </select>
+
+    <a id="birthday" href="#">why i need to provide my birthday?</a><br><BR>
+
+    <input type="radio"><label class="gender">Male</label></input>
+    <input type="radio"><label class="gender">Female</label></input><br>
+
+     <p class="terms_and_conditions">
+		By clicking Create an account, you agree to our Terms and confirm that you have read our Data Policy, including our cokiee
+                Policy. You may receive SMS message notifications from Facebook and can opt out at any time.
+	</p><br>
+
+
+     <button id="submit">Create an account</button><br>
+	
+     <span style="font-family:Helvetica, Arial, sans-serif; color:rgb(102, 102, 102); font-size:13px;"><a href="#">Create a Page</a> for a celebrity, band or business. </span>
+
+	
+
+  </div>
+
+
+  <div class="footer">
+
+  </div>
+
 </body>
+
 </html>
